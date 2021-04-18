@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>From Zero To Hero LWC</label>
+    <navType>Standard</navType>
+    <tabs>LWC</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>From_Zero_To_Hero_LWC_UtilityBar</utilityBar>
+</CustomApplication>

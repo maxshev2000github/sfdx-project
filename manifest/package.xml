@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>From_Zero_To_Hero_LWC</members>
+		<name>CustomApplication</name>
+	</types>
+	<types>
+		<members>LWC</members>
+		<name>FlexiPage</name>
+	</types>
+	<version>50.0</version>
+</Package>
