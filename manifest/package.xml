@@ -6,11 +6,13 @@
 	</types>
 	<types>
 		<members>LWC</members>
+		<members>Quiz_App</members>
 		<name>CustomTab</name>
 	</types>
 	<types>
 		<members>From_Zero_To_Hero_LWC_UtilityBar</members>
 		<members>LWC</members>
+		<members>Quiz_App</members>
 		<name>FlexiPage</name>
 	</types>
 	<types>
