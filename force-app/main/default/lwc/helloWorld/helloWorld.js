@@ -20,5 +20,18 @@ export default class HelloWorld extends LightningElement {
 
     trackHandler(event){
         this.address ={...this.address,"city": event.target.value.toUpperCase()
-    }} 
+    }}
+    
+    // getter example
+
+    users = ["max", "oleg", "alla","angel"];
+    num1 = 6
+    num2 = 13
+    get getUserZero(){
+        return `All users combined: ${this.users.join(' | ').toLocaleUpperCase()}`
+    }
+
+    get multiply(){
+        return this.num1*this.num2
+    }
 }

@@ -6,7 +6,20 @@
 	</types>
 	<types>
 		<members>LWC</members>
+		<name>CustomTab</name>
+	</types>
+	<types>
+		<members>From_Zero_To_Hero_LWC_UtilityBar</members>
+		<members>LWC</members>
 		<name>FlexiPage</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>LightningComponentBundle</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>LightningMessageChannel</name>
 	</types>
 	<version>50.0</version>
 </Package>
