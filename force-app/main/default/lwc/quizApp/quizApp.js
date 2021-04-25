@@ -2,6 +2,9 @@ import { LightningElement } from 'lwc';
 
 export default class QuizApp extends LightningElement {
     selected ={};
+    correctAnswers = 0;
+    isSubmitted = false;
+
     myQuestions = [
         {
             id: "Question1",
@@ -43,20 +46,33 @@ export default class QuizApp extends LightningElement {
         // console.log('name',name);
         // console.log('value',value);
         this.selected = {...this.selected,[name]:value};
-        // console.log('this.selected',this.selected);
-        console.log('Object.keys(this.selected)',this.selected);
+        console.log('this.selected',this.selected);
+        console.log('Object.values(this.selected)',Object.values(this.selected));
 
     }
 
-    submitHandler(){
-
+    submitHandler(event){
+        event.preventDefault();
+        let correct = this.myQuestions.filter(item =>{
+            return this.selected[item.id]===item.correctAnswer;
+        });
+        console.log('correct',correct);
+        this.correctAnswers = correct.length;
+        console.log('this.correctAnswers',this.correctAnswers);
+        this.isSubmitted = true;
     }
 
     resetHandler(){
-        
+        this.selected = {};
+        this.correctAnswers = 0 
+        this.isSubmitted = false;      
     }
 
     get allNotSelected(){
         return !(Object.keys(this.selected).length===this.myQuestions.length)
+    }
+
+    get isScoredFull(){
+        return `slds-text-heading_large ${this.myQuestions.length === this.correctAnswers?'slds-text-color_success':'slds-text-color_error'}`
     }
 }
