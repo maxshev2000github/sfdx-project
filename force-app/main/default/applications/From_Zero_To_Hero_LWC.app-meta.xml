@@ -11,6 +11,7 @@
     <label>From Zero To Hero LWC</label>
     <navType>Standard</navType>
     <tabs>LWC</tabs>
+    <tabs>Quiz_App</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>From_Zero_To_Hero_LWC_UtilityBar</utilityBar>
 </CustomApplication>
