@@ -1,6 +1,7 @@
 import { LightningElement } from 'lwc';
 
 export default class QuizApp extends LightningElement {
+    selected ={};
     myQuestions = [
         {
             id: "Question1",
@@ -35,6 +36,27 @@ export default class QuizApp extends LightningElement {
     ]
 
     changeHandler (event){
+        // console.log('name',event.target.name);
+        // console.log('value',event.target.value);
+        // console.log(event.target);
+        const {name,value} = event.target;
+        // console.log('name',name);
+        // console.log('value',value);
+        this.selected = {...this.selected,[name]:value};
+        // console.log('this.selected',this.selected);
+        console.log('Object.keys(this.selected)',this.selected);
+
+    }
+
+    submitHandler(){
+
+    }
+
+    resetHandler(){
         
+    }
+
+    get allNotSelected(){
+        return !(Object.keys(this.selected).length===this.myQuestions.length)
     }
 }

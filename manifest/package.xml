@@ -23,5 +23,9 @@
 		<members>*</members>
 		<name>LightningMessageChannel</name>
 	</types>
+	<types>
+		<members>Zero_To_Hero_LWC</members>
+		<name>PermissionSet</name>
+	</types>
 	<version>50.0</version>
 </Package>
