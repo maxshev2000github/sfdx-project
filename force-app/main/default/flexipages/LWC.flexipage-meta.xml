@@ -12,7 +12,7 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentName>quizApp</componentName>
+                <componentName>helloParentComponent</componentName>
             </componentInstance>
         </itemInstances>
         <name>region2</name>
